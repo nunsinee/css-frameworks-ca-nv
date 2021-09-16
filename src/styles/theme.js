@@ -1,0 +1,16 @@
+export default {
+	primaryColour: "#e92569",
+	secondaryColour: "#0a0a0a",
+	textColour: "#767676",
+	backgroundColour: "radial-gradient(#ffffff, #e5e5e5)",
+	navbarColour: "#efefef",
+	borderRadius: "10px",
+	boxShadow: "0px 16px 22px rgba(118,118,118,1)",
+	playfairFont: "Playfair Display",
+	latoFont: "Lato",
+	small: "576px",
+	medium: "768px",
+	large: "992px",
+	tabShadow: "0 6px 12px rgba(0, 0, 0, 0.05)",
+	navShadow: "0 6px 12px rgba(0, 0, 0, .16)",
+};
