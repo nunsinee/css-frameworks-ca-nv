@@ -31,20 +31,19 @@ p{
 	margin-bottom:3rem;
 }
 
-footer {
-		padding: 0.5rem;
-		background-color: white;
-		width: 100%;
-		height:100px;
-		flex-shrink:0;
-	
-	}
+
+footer{
+	background-color: white;
+	width: 100%;
+	height:160px;
+	flex-shrink:0;
+
+}
 
 	@media (min-width:768px){
 		footer {height:60px;}
-	}
 
-
+}
 
 `;
 

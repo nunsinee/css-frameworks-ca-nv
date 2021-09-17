@@ -4,36 +4,39 @@ import { Form, InputGroup, FormControl } from "react-bootstrap";
 import FormContainer from "../layout/formContact/FormContainer";
 import Button from "../layout/formContact/Button";
 import { FormCheckCustom } from "../layout/formContact/CheckboxStyles";
+import { InputGroupText } from "./InputGroupText";
+import FormLabelStyles from "../typography/FormLabelStyles";
 
 function FormContact() {
 	return (
 		<FormContainer>
 			<Form>
-				<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-					<Form.Label>Name</Form.Label>
-					<Form.Control type="name" placeholder="Name" />
+				<Form.Group className="mb-3">
+					<FormLabelStyles>Name</FormLabelStyles>
+					<Form.Control type="name" />
 				</Form.Group>
 
-				<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-					<Form.Label>Email address</Form.Label>
-					<Form.Control type="email" placeholder="name@example.com" />
+				<Form.Group className="mb-3">
+					<FormLabelStyles>Email address</FormLabelStyles>
+					<Form.Control type="email" />
 				</Form.Group>
 
-				<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-					<Form.Label htmlFor="basic-url">Website</Form.Label>
+				<Form.Group className="mb-3">
+					<FormLabelStyles>Website</FormLabelStyles>
 					<InputGroup className="mb-3">
-						<InputGroup.Text id="basic-addon3">https://</InputGroup.Text>
-						<FormControl id="basic-url" aria-describedby="basic-addon3" />
+						<span>
+							<InputGroupText />
+						</span>
+						<FormControl id="basic-url" />
 					</InputGroup>
 				</Form.Group>
 
-				<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-					<Form.Label>Message</Form.Label>
+				<Form.Group className="mb-3">
+					<FormLabelStyles>Message</FormLabelStyles>
 					<Form.Control as="textarea" rows={3} />
 				</Form.Group>
 
 				<Form.Group className="mb-3">
-					{/* Custom FormCheck */}
 					<FormCheckCustom />
 				</Form.Group>
 

@@ -1,14 +1,11 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-import { Row, Col } from "react-bootstrap";
 import AccordionStyles from "./AccordionStyles";
 import ImgTab1 from "../../assets/tabImages/tab-1.jpg";
 import ImgTab2 from "../../assets/tabImages/tab-2.jpg";
 import ImgTab3 from "../../assets/tabImages/tab-3.jpg";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { Share } from "../typography/Share";
 import { Paragraph, AccordionParagraph } from "../typography/Paragraph";
+import { IconLinks } from "../typography/icons/IconLinks";
 
 function ContentAccordion() {
 	return (
@@ -35,15 +32,7 @@ function ContentAccordion() {
 									/>
 								</div>
 								<div className="tabIcons">
-									<Col>
-										<Share />
-									</Col>
-									<Col>
-										<FaFacebookF />
-									</Col>
-									<Col>
-										<FaTwitter />
-									</Col>
+									<IconLinks />
 								</div>
 							</div>
 						</div>
@@ -70,15 +59,7 @@ function ContentAccordion() {
 									/>
 								</div>
 								<div className="tabIcons">
-									<Col>
-										<Share />
-									</Col>
-									<Col>
-										<FaFacebookF />
-									</Col>
-									<Col>
-										<FaTwitter />
-									</Col>
+									<IconLinks />
 								</div>
 							</div>
 						</div>
@@ -106,15 +87,7 @@ function ContentAccordion() {
 									/>
 								</div>
 								<div className="tabIcons">
-									<Col>
-										<Share />
-									</Col>
-									<Col>
-										<FaFacebookF />
-									</Col>
-									<Col>
-										<FaTwitter />
-									</Col>
+									<IconLinks />
 								</div>
 							</div>
 						</div>

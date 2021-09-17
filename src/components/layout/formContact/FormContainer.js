@@ -8,7 +8,7 @@ const FormContainer = styled.form`
 	align-self: center;
 	padding: 2rem;
 	border-radius: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 5rem;
 	color: ${(props) => props.theme.textColour};
 	background-color: ${(props) => props.theme.backgroundColour};
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.04);

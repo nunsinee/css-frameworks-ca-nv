@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { ContainerStyles, ContainerNav } from "../layout/ContainerStyles";
+import { NavLink } from "react-router-dom";
 
 const Styles = styled.div`
 	.navbar {
@@ -22,13 +23,21 @@ const Styles = styled.div`
 	.navbar-light .navbar-nav .nav-link,
 	.nav-link.active {
 		color: ${(props) => props.theme.secondaryColour};
-		padding-left: 1rem;
 	}
 
 	.nav-link.active {
 		background: white;
 		color: ${(props) => props.theme.secondaryColour};
 		border-radius: 3px;
+	}
+
+	@media (min-width: ${(props) => props.theme.medium}) {
+		.navbar-nav .nav-link {
+			padding-right: 1rem;
+			padding-left: 1rem;
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
 	}
 
 	.btn-outline-success {
@@ -38,25 +47,25 @@ const Styles = styled.div`
 		background: ${(props) => props.theme.primaryColour};
 	}
 
-	.nav-link .active {
-		background: white;
-		border-radius: 3px;
-		color: ${(props) => props.theme.secondaryColour};
-	}
-
 	.d-flex {
 		padding: 1rem;
 	}
 
-	@media (max-width: 991px) {
+	@media (max-width: ${(props) => props.theme.medium}) {
 		.navbar-collapse.collapse.show {
 			width: 90%;
 			height: 100%;
 			background: #efefef;
 			box-shadow: ${(props) => props.theme.navShadow};
 		}
+
+		.navbar-light .navbar-nav .nav-link,
+		.nav-link.active {
+			padding-left: 1rem;
+		}
 	}
 `;
+
 
 export const NavigationBar = () => (
 	<Styles>
@@ -70,13 +79,15 @@ export const NavigationBar = () => (
 						style={{ maxHeight: "150px" }}
 						navbarScroll
 					>
-						<Nav.Link href="/" className="nav-link active">
+						<Nav.Link as={NavLink} exact to="/">
 							Home
 						</Nav.Link>
-						<Nav.Link href="/news" className="nav-link">
+
+						<Nav.Link as={NavLink} exact to="/news">
 							News
 						</Nav.Link>
-						<Nav.Link href="/contact" className="nav-link">
+
+						<Nav.Link as={NavLink} exact to="/contact">
 							Contact
 						</Nav.Link>
 					</Nav>

@@ -8,7 +8,7 @@ const CarouselStyles = styled(Carousel)`
 		margin: 0.5rem 0.5rem;
 		border-radius: 2px;
 		background-color: white;
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0);
 		border: none;
 	}
 
@@ -16,7 +16,7 @@ const CarouselStyles = styled(Carousel)`
 		.carousel-indicators button {
 			width: 30px;
 			height: 30px;
-			margin: 1rem 0.5rem;
+			margin: 2rem 0.5rem;
 		}
 	}
 

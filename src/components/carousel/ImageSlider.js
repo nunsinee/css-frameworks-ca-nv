@@ -9,16 +9,17 @@ function ImageSlider() {
 	return (
 		<CarouselStyles>
 			<Carousel.Item>
-				<img className="d-block w-100" src={Img1} alt="old televisions" />
+				<img className="d-block w-100" src={Img1} alt="old televisions" fluid />
 			</Carousel.Item>
 			<Carousel.Item>
-				<img className="d-block w-100" src={Img2} alt="The green ray" />
+				<img className="d-block w-100" src={Img2} alt="The green ray" fluid />
 			</Carousel.Item>
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
 					src={Img3}
 					alt="A broken screen television"
+					fluid
 				/>
 			</Carousel.Item>
 		</CarouselStyles>

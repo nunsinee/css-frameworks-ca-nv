@@ -29,7 +29,7 @@ export const AddressListGroups = () => (
 			<ListGroup.Item>
 				<Row>
 					<Col>
-						<MdMail size={28} />
+						<MdMail size={42} />
 					</Col>
 					<Col xs={9}>hello@yay.com</Col>
 				</Row>
@@ -37,7 +37,7 @@ export const AddressListGroups = () => (
 			<ListGroup.Item>
 				<Row>
 					<Col>
-						<MdPhone size={28} />
+						<MdPhone size={42} />
 					</Col>
 					<Col xs={9}>123 456 7890</Col>
 				</Row>
@@ -45,7 +45,7 @@ export const AddressListGroups = () => (
 			<ListGroup.Item>
 				<Row>
 					<Col>
-						<MdLocationOn size={28} />
+						<MdLocationOn size={42} />
 					</Col>
 					<Col xs={9}>
 						<li>123 Some Street</li>
@@ -58,41 +58,3 @@ export const AddressListGroups = () => (
 		</ListGroup>
 	</Styles>
 );
-
-// const Address = () => {
-// 	return (
-// 		<ListGroup>
-// 			<ListGroup.Item>
-// 				<Row>
-// 					<Col>
-// 						<MdMail />
-// 					</Col>
-// 					<Col>hello@yay.com</Col>
-// 				</Row>
-// 			</ListGroup.Item>
-// 			<ListGroup.Item>
-// 				<Row>
-// 					<Col>
-// 						<MdPhone />
-// 					</Col>
-// 					<Col>123 456 7890</Col>
-// 				</Row>
-// 			</ListGroup.Item>
-// 			<ListGroup.Item>
-// 				<Row>
-// 					<Col>
-// 						<MdLocationOn />
-// 					</Col>
-// 					<Col>
-// 						<li>123 Some Street</li>
-// 						<li>Somewhere</li>
-// 						<li>Some City</li>
-// 						<li>10000</li>
-// 					</Col>
-// 				</Row>
-// 			</ListGroup.Item>
-// 		</ListGroup>
-// 	);
-// };
-
-// export default Address;

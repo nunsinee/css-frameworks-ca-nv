@@ -1,7 +1,6 @@
 import React from "react";
 import ContainerStyles from "../components/layout/ContainerStyles";
 import PageHeading from "../components/typography/PageHeading";
-// import { Row, Col } from "react-bootstrap";
 import FormContact from "../components/contact/FormContact";
 import { AddressListGroups } from "../components/contact/AddressListGroups";
 

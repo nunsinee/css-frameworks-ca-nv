@@ -44,14 +44,11 @@ const AccordionStyles = styled.div`
 			"tabIcons";
 		color: ${(props) => props.theme.textColour};
 		margin: 0;
+		
 	}
 
 	.tabContent > .tabIcons {
-		grid-area: tabIcons;
-		font-size: 28px;
-		font-weight: 600;
-		color: black;
-		display: flex;
+		margin: 0 auto;
 		margin-bottom: 2rem;
 	}
 `;

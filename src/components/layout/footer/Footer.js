@@ -1,8 +1,8 @@
 import React from "react";
 import { FaYoutube } from "react-icons/fa";
 import { FaVimeoV } from "react-icons/fa";
-import ContainerStyles from "./ContainerStyles";
-import FooterStyles from "./footerLayout/FooterStyles";
+import ContainerStyles from "../ContainerStyles";
+import FooterStyles from "./FooterStyles";
 
 const Footer = () => (
 	<footer>

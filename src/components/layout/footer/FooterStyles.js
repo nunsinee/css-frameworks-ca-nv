@@ -13,16 +13,19 @@ const FooterStyles = styled.div`
 		grid-area: footer-icons;
 		font-size: 2rem;
 		text-align: center;
+		padding: 1rem;
 	}
 
 	.footer-grid > .footer-email {
 		grid-area: footer-email;
 		text-align: left;
+		padding: 1rem;
 	}
 
 	.footer-grid > .footer-copyright {
 		grid-area: footer-copyright;
 		text-align: right;
+		padding: 1rem;
 	}
 
 	@media (min-width: ${(props) => props.theme.medium}) {
@@ -33,9 +36,11 @@ const FooterStyles = styled.div`
 
 		.footer-grid > .footer-icons {
 			text-align: left;
+			padding: 0;
 		}
 		.footer-grid > .footer-email {
 			text-align: center;
+			padding: 0;
 		}
 	}
 
