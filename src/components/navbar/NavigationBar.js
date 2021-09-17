@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
-import { ContainerStyles, ContainerNav } from "../layout/ContainerStyles";
+import { ContainerNav } from "../layout/ContainerStyles";
 import { NavLink } from "react-router-dom";
 
 const Styles = styled.div`
@@ -45,6 +45,19 @@ const Styles = styled.div`
 		border-color: ${(props) => props.theme.primaryColour};
 		color: white;
 		background: ${(props) => props.theme.primaryColour};
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+
+	input.form-control {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.mr-2 {
+		margin-right: -2px !important;
 	}
 
 	.d-flex {
@@ -65,7 +78,6 @@ const Styles = styled.div`
 		}
 	}
 `;
-
 
 export const NavigationBar = () => (
 	<Styles>

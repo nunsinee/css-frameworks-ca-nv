@@ -31,7 +31,6 @@ p{
 	margin-bottom:3rem;
 }
 
-
 footer{
 	background-color: white;
 	width: 100%;
